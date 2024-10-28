@@ -2,6 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import studentRoute from "./routes/student.route.js";
+import cors from 'cors';
 
 const app = express();
 dotenv.config()
@@ -12,6 +13,9 @@ const DB_STRING = process.env.DB_STRING
 //middlewares
 app.use(express.json());
 app.use(express.urlencoded({extended: false}))
+
+app.use(cors());
+
 
 //routes
 app.use('/api/students', studentRoute);

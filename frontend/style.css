@@ -8,10 +8,6 @@ body{
   background: rgb(255,220,255);
 }
 
-.app{
-  display: grid;
-}
-
 header{
   margin-top: 1em;
 }
@@ -37,8 +33,7 @@ li.menu{
 }
 
 main{
-  margin-block: 2em;
-  background: rgb(200,200,200);
+  margin:1em 0 4em 0;
 }
 
 footer{
@@ -68,6 +63,33 @@ form{
   height: 40px;
 }
 
-#button{
+#button, #find-button{
   padding: 1em 2em;
+}
+
+.g{
+  background: gray;
+  width: 80%;
+  margin-inline: auto;
+  padding: 1em;
+  border-radius: 12px;
+}
+
+/*---find.html---*/
+.student-div {
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-info h3, .student-info p {
+  margin: 10px 0;
+}
+
+.student-info strong {
+  color: #333;
 }
