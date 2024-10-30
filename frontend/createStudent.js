@@ -22,7 +22,17 @@ const createStudent = async () => {
 
     if (response.ok) {
       const savedStudent = await response.json();
-      alert(`${studentData.name} data Saved, your ID is ${savedStudent._id}`);
+      const {_id,name, email, student_id, gpa} = savedStudent;
+      const studentHTML = `
+        <div class="g">
+        <p>Your details successfully added to database!</p>
+        <p>Copy your ID below and save securely.</p>
+        <hr>
+        <br>
+        <strong><p>${_id}</p></strong>
+        </div>
+      `
+      document.querySelector('.student-added-div').innerHTML = studentHTML
     } else {
       const errorResponse = await response.json();
       alert('Failed to save student data: ' + errorResponse.message);

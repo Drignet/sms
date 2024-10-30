@@ -7,8 +7,8 @@ const findStudent = async (id) => {
       const student = await response.json();
       const {name, email, student_id, gpa} = student
       const studentHTML = `
-        <div class="student-info">
-          <h3><strong>Name : </strong> ${name}</h3>
+        <div class="g">
+          <h3>${name}</h3>
           <p><strong>E-mail : </strong> ${email}</p>
           <p><strong>Student ID : </strong> ${student_id}</p>
           <p><strong>GPA : </strong> ${gpa}</p>

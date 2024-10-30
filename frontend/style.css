@@ -5,11 +5,12 @@
 }
 
 body{
-  background: rgb(255,220,255);
+  background: #fff;
+  font-size: 1rem;
 }
 
 header{
-  margin-top: 1em;
+  dmargin-top: 1em;
 }
 
 li.menu a{
@@ -25,6 +26,8 @@ ul.menus{
 
 ul.menus li{
   list-style: none;
+  background: rgba(0,125,0,0.8);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 li.menu{
@@ -41,10 +44,11 @@ footer{
   bottom: 0;
   min-width: 100%;
   text-align: center;
-  font-size: 1.4rem;
+  font-size: 0.8rem;
   background: #222;
   color: #fff;
   padding-block: 0.4em;
+  background: rgba(0,125,0,0.8);
 }
 
 form{
@@ -61,29 +65,37 @@ form{
 .form-text-input{
   max-width: 400px;
   height: 40px;
+  padding-left: 0.5em;
+  border: none;
+  outline: 1px solid rgba(0,125,0,0.4);
 }
 
-#button, #find-button{
-  padding: 1em 2em;
+.btn{
+  padding: 0.5em 1em;
+  border: none;
+  font-size: 1.2rem;
+  background: rgba(0,125,0,0.2);
+  font-weight: 300;
+  cursor: pointer;
 }
 
 .g{
-  background: gray;
+  background: rgba(0,125,0,0.1);
   width: 80%;
   margin-inline: auto;
   padding: 1em;
   border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.g h3{
+  color:rgba(0,125,0,0.8);
 }
 
 /*---find.html---*/
-.student-div {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.student-div{
+  margin-top: 2em;
 }
 
 .student-info h3, .student-info p {
@@ -92,4 +104,15 @@ form{
 
 .student-info strong {
   color: #333;
+}
+
+/*--update file --*/
+#update-form{
+  display: grid;
+  justify-content: center;
+}
+
+.del{
+  background: red;
+  color: #fff;
 }

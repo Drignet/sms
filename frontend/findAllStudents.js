@@ -12,9 +12,9 @@ const findAllStudents = async () => {
       const studentsHTML = students.map((student) => {
         return `<div class="g">
                   <h3>${student.name}</h3>
-                  <p>Email: ${student.email}</p>
-                  <p>Student ID: ${student.student_id}</p>
-                  <p>GPA: ${student.gpa}</p>
+                  <p><strong>Email:</strong> ${student.email}</p>
+                  <p><strong>Student ID:</strong> ${student.student_id}</p>
+                  <p><strong>GPA:</strong> ${student.gpa}</p>
                 </div>`;
       });
       

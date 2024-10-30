@@ -6,8 +6,7 @@ const deleteStudent = async (id) => {
       }
       });
       if(response.ok){
-        const student = await response.json()
-        alert("student deleted successfully" , JSON.stringify(student))
+        alert("student deleted successfully")
       }else{
         alert("Failed to delete")
       }
